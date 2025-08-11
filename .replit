@@ -1,11 +1,11 @@
 modules = ["php-8.2", "web"]
-run = "node index.js"
+run = "php -S 0.0.0.0:5000"
 
 [nix]
 channel = "stable-25_05"
 
 [deployment]
-run = ["sh", "-c", "node index.js"]
+run = ["sh", "-c", "php -S 0.0.0.0:5000"]
 
 [workflows]
 runButton = "Start PHP Server"
