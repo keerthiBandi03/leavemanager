@@ -8,7 +8,7 @@ channel = "stable-25_05"
 run = ["sh", "-c", "php -S 0.0.0.0:5000"]
 
 [workflows]
-runButton = "Start PHP Server"
+runButton = "Start Full Stack App"
 
 [[workflows.workflow]]
 name = "Start PHP Server"
@@ -18,6 +18,19 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "php -S 0.0.0.0:5000"
+
+[[workflows.workflow]]
+name = "Start Full Stack App"
+author = 46280865
+mode = "parallel"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "php -S 0.0.0.0:5000"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd leave-management-frontend && npm start"
 
 [[ports]]
 localPort = 5000
