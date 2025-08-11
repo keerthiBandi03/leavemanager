@@ -14,3 +14,14 @@ $srvRoot = str_replace ('config/config.php' ,'', $this_file);
 define('WEB_ROOT', $webRoot);
 define('SRV_ROOT', $srvRoot);
 ?>
+<?php
+// Database configuration
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'leavedb');
+
+// Application configuration
+define('WEB_ROOT', 'http://0.0.0.0:5000/');
+define('SITE_NAME', 'Leave Management System');
+?>

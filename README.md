@@ -116,6 +116,43 @@ npm start
 - `GET /api/leaves` - Get all leaves
 - `GET /api/leaves/my-leaves` - Get current user's leaves
 - `GET /api/leaves/pending` - Get pending leaves
+- `GET /api/leaves/approved` - Get approved leaves
+- `GET /api/leaves/rejected` - Get rejected leaves
+- `POST /api/leaves` - Create new leave request
+- `PUT /api/leaves/{id}` - Update leave status
+- `DELETE /api/leaves/{id}` - Delete leave
+
+### Companies
+- `GET /api/companies` - Get all companies
+- `POST /api/companies` - Create company
+- `PUT /api/companies/{id}` - Update company
+- `DELETE /api/companies/{id}` - Delete company
+
+### Departments
+- `GET /api/departments` - Get all departments
+- `POST /api/departments` - Create department
+- `PUT /api/departments/{id}` - Update department
+- `DELETE /api/departments/{id}` - Delete department
+
+### Employees
+- `GET /api/employees` - Get all employees
+- `GET /api/employees/{id}` - Get specific employee
+- `POST /api/employees` - Create employee
+- `PUT /api/employees/{id}` - Update employee
+- `DELETE /api/employees/{id}` - Delete employee
+
+### Leave Types
+- `GET /api/leave-types` - Get all leave types
+- `POST /api/leave-types` - Create leave type
+- `PUT /api/leave-types/{id}` - Update leave type
+- `DELETE /api/leave-types/{id}` - Delete leave typei/auth/login` - User login
+- `POST /api/auth/logout` - User logout
+- `GET /api/auth/verify` - Verify session
+
+### Leaves
+- `GET /api/leaves` - Get all leaves
+- `GET /api/leaves/my-leaves` - Get current user's leaves
+- `GET /api/leaves/pending` - Get pending leaves
 - `POST /api/leaves` - Create new leave request
 - `PUT /api/leaves/{id}` - Update leave status
 - `DELETE /api/leaves/{id}` - Delete leave

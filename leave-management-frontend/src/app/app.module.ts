@@ -14,6 +14,9 @@ import { LeaveFormComponent } from './components/leave-form/leave-form.component
 import { AuthService } from './services/auth.service';
 import { LeaveService } from './services/leave.service';
 import { CompanyService } from './services/company.service';
+import { DepartmentService } from './services/department.service';
+import { EmployeeService } from './services/employee.service';
+import { LeaveTypeService } from './services/leave-type.service';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -41,7 +44,10 @@ const routes: Routes = [
   providers: [
     AuthService,
     LeaveService,
-    CompanyService
+    CompanyService,
+    DepartmentService,
+    EmployeeService,
+    LeaveTypeService
   ],
   bootstrap: [AppComponent]
 })
